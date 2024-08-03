@@ -35,7 +35,6 @@ public class GetMethos {
 		System.out.println("windowId "+ windowId);  //2A8EF3BACCF4BA38DBF8834CE89172A1
 		
 		//getWindowHandales()- return ID's of multiple browser windows
-		
 		driver.findElement(By.linkText("OrangeHRM, Inc")).click();
 		Set<String> windows = driver.getWindowHandles();
 		System.out.println(windows); //[2A8EF3BACCF4BA38DBF8834CE89172A1, 91CEB96D5FE6DEF9E52BCDBB87608664]

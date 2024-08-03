@@ -30,7 +30,7 @@ public class FluentWaitDemo {
 		
 		WebElement txtusername = mywait.until(new Function<WebDriver, WebElement>(){
 			public WebElement apply(WebDriver driver) {
-				return driver.findElement(By.xpath("input[@placeholder= 'Username']"));
+				return driver.findElement(By.xpath("//input[@placeholder= 'Username']"));
 			}
 		});
 		
@@ -38,7 +38,8 @@ public class FluentWaitDemo {
 		
 		
 		
-		//driver.findElement(By.xpath("input[@placeholder= 'Username']")).sendKeys("Admin");
+		
+		//driver.findElement(By.xpath("input[@placeholder= 'username']")).sendKeys("Admin");
 		
 
 	}

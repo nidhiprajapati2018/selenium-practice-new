@@ -21,8 +21,10 @@ public class ClosingSpecificBrowserWindows {
 		for(String windId : windowIDs ) {
 			String title = driver.switchTo().window(windId).getTitle();
 			System.out.println(title);
+			System.out.println("HI");
 			
 			if(title.equals("OrangeHRm")|| title.equals("someother title")) {
+				System.out.println("HI");
 				driver.close();
 			}
 		}

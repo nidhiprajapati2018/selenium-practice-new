@@ -39,7 +39,7 @@ public class MultiSelectFromSeleniumNotes {
 	      //Action multipleSelect = builder.keyDown(Keys.CONTROL).click(options.get(2)).click(options.get(4)).click(options.get(6)).build();
 	    Action multipleSelect = builder.click(options.get(2)).click(options.get(4)).click(options.get(6)).build();
 	      
-	     Action multipleSelect = builder.keyDown(Keys.SHIFT).click(options.get(0)).click(options.get(5)).build();
+	     Action multipleSelect1 = builder.keyDown(Keys.SHIFT).click(options.get(0)).click(options.get(5)).build();
 	      
 	      //driver.close();
 

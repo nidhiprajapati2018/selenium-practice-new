@@ -2,6 +2,7 @@ package day22;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CSSLocators {
@@ -27,7 +28,8 @@ public class CSSLocators {
 	    
 	    //tag class attribute
 	    driver.findElement(By.cssSelector("input.search-box-text[name= 'q']")).sendKeys("T-shirts") ;
-	    driver.findElement(By.cssSelector("button[type='submit']"));
+	    WebElement submit = driver.findElement(By.cssSelector("button[type='submit']"));
+	    System.out.println(submit.getAttribute("name"));
 
 	}
 

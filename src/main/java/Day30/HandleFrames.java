@@ -23,16 +23,16 @@ public class HandleFrames {
 		driver.switchTo().frame(fram1);
 		driver.findElement(By.xpath("//input[@name='mytext1']")).sendKeys("welcome");
 		
-		driver.switchTo().defaultContent();
+		//driver.switchTo().defaultContent();
 		
 		//Frame2
-		WebElement fram2 =  driver.findElement(By.xpath("//frame[@src='frame_2.html']"));
-		driver.switchTo().frame(fram2);
-		driver.findElement(By.xpath("//input[@name='mytext2']")).sendKeys("Automation");
+		//WebElement fram2 =  driver.findElement(By.xpath("//frame[@src='frame_2.html']"));
+		//driver.switchTo().frame(fram2);
+		//driver.findElement(By.xpath("//input[@name='mytext2']")).sendKeys("Automation");
 		
 		driver.switchTo().defaultContent();
 		
-		//frame3
+		/*//frame3
 		WebElement fram3 =  driver.findElement(By.xpath("//frame[@src='frame_3.html']"));
 		driver.switchTo().frame(fram3);
 		driver.findElement(By.xpath("//input[@name='mytext3']")).sendKeys("manual");
@@ -40,7 +40,7 @@ public class HandleFrames {
         //switch to inner frame(part of frame3)
 		driver.switchTo().frame(0); //switch to inner frame
 		
-		driver.findElement(By.xpath("//div[@id='i5']//div[@class='AB7Lab Id5V1']")).click();
+		driver.findElement(By.xpath("//div[@id='i5']//div[@class='AB7Lab Id5V1']")).click();*/
 	}
 
 }

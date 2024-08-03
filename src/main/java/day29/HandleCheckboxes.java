@@ -19,10 +19,10 @@ public class HandleCheckboxes {
 		driver.manage().window().maximize();
 		
 		//Select checkbox
-//		WebElement checkbox = driver.findElement(By.xpath("//input[@id ='sunday']"));
-//		System.out.println("Before Selection  "+checkbox.isSelected());
-//		driver.findElement(By.xpath("//input[@id ='sunday']")).click();
-//		System.out.println("After Selection  "+checkbox.isSelected());
+     	/*WebElement checkbox = driver.findElement(By.xpath("//input[@id ='sunday']"));
+		System.out.println("Before Selection  "+checkbox.isSelected());
+	    driver.findElement(By.xpath("//input[@id ='sunday']")).click();
+		System.out.println("After Selection  "+checkbox.isSelected());*/
 		
 		//2) capturing all the checkboxes
 		List<WebElement> checkboxes = driver.findElements(By.xpath("//input[@class ='form-check-input' and @ type ='checkbox']"));
@@ -72,7 +72,7 @@ public class HandleCheckboxes {
 		
 		
 		//select checkbox bassed on the value
-		String weekname = "Sunday";
+		/*String weekname = "Sunday";
 		
 		switch (weekname)
 		{
@@ -99,6 +99,7 @@ public class HandleCheckboxes {
 		 default    : System.out.println("Invalid week day");
 		   
 		}
+		*/
 		
 		
 		
