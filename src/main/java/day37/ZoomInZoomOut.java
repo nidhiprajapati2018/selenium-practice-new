@@ -8,14 +8,14 @@ public class ZoomInZoomOut {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
 		//driver.manage().window().minimize();
-		
+
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("document.body.style.zoom='50%'");
-		
+
 		Thread.sleep(5000);
 		js.executeScript("document.body.style.zoom='80%'");
 

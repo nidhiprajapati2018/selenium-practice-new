@@ -2,14 +2,15 @@ package day42;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 
 public class TestCase2 {
-	
+
 	public WebDriver driver;
-	
+
 	@BeforeTest
 	public void launchBrowser() {
 		System.out.println("launching firefox browser ");
@@ -21,10 +22,10 @@ public class TestCase2 {
 	public void terminateBrowser() {
 		driver.close();
 	}
-	
+
 	@Test(priority = 1)
 	public void verifyHomepageTitle() {
-		
+
 		String expectedtitle = "demoaut.com - demoaut Resources and Information.";
 		String actualTitle = driver.getTitle();
 		System.out.println(actualTitle);
