@@ -8,15 +8,15 @@ public class TabAndWindows {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://www.opencart.com/");
-		
+
 		//selenium4.x
 		driver.switchTo().newWindow(WindowType.TAB);  //opens new tab
 		//driver.switchTo().newWindow(WindowType.WINDOW); //open new window
-		
+
 		driver.get("https://orangehrm.com/");
-		
+
 	}
 
 }
