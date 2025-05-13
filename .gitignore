@@ -1,0 +1,6 @@
+/target/
+/allure-results/
+/test-output/
+/.factorypath
+/src/main/java/headlessMode/package-info.java
+/src/main/java/PritiProgram/package-info.java
