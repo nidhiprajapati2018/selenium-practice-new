@@ -1,71 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-03T13:30:07 MST" name="Suite" finished-at="2024-08-03T13:31:05 MST" duration-ms="57860">
+  <suite started-at="2025-05-09T17:06:38 MST" name="Default suite" finished-at="2025-05-09T17:06:39 MST" duration-ms="396">
     <groups>
     </groups>
-    <test started-at="2024-08-03T13:30:07 MST" name="chrometest" finished-at="2024-08-03T13:31:00 MST" duration-ms="53199">
-      <class name="ParallelTesting.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:ParallelTesting.ParamTest@413d1baf]" started-at="2024-08-03T13:30:07 MST" name="setup" finished-at="2024-08-03T13:31:00 MST" duration-ms="52392" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-05-09T17:06:38 MST" name="Default test" finished-at="2025-05-09T17:06:39 MST" duration-ms="396">
+      <class name="day42.FirstTestCase">
+        <test-method signature="login()[pri:2, instance:day42.FirstTestCase@58be6e8]" started-at="2025-05-09T17:06:38 MST" name="login" finished-at="2025-05-09T17:06:38 MST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:ParallelTesting.ParamTest@413d1baf]" started-at="2024-08-03T13:31:00 MST" name="testLogo" finished-at="2024-08-03T13:31:00 MST" duration-ms="391" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:3, instance:day42.FirstTestCase@58be6e8]" started-at="2025-05-09T17:06:39 MST" name="logout" finished-at="2025-05-09T17:06:39 MST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:ParallelTesting.ParamTest@413d1baf]" started-at="2024-08-03T13:31:00 MST" name="testTitle" finished-at="2024-08-03T13:31:00 MST" duration-ms="24" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method signature="opeapp()[pri:4, instance:day42.FirstTestCase@58be6e8]" started-at="2025-05-09T17:06:39 MST" name="opeapp" finished-at="2025-05-09T17:06:39 MST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:ParallelTesting.ParamTest@413d1baf]" started-at="2024-08-03T13:31:00 MST" name="testURL" finished-at="2024-08-03T13:31:00 MST" duration-ms="36" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelTesting.ParamTest@413d1baf]" started-at="2024-08-03T13:31:00 MST" name="tearDown" finished-at="2024-08-03T13:31:00 MST" duration-ms="153" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- ParallelTesting.ParamTest -->
-    </test> <!-- chrometest -->
-    <test started-at="2024-08-03T13:30:07 MST" name="edgetest" finished-at="2024-08-03T13:31:05 MST" duration-ms="57860">
-      <class name="ParallelTesting.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:ParallelTesting.ParamTest@70cf32e3]" started-at="2024-08-03T13:30:07 MST" name="setup" finished-at="2024-08-03T13:31:04 MST" duration-ms="57034" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:ParallelTesting.ParamTest@70cf32e3]" started-at="2024-08-03T13:31:04 MST" name="testLogo" finished-at="2024-08-03T13:31:05 MST" duration-ms="444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:ParallelTesting.ParamTest@70cf32e3]" started-at="2024-08-03T13:31:05 MST" name="testTitle" finished-at="2024-08-03T13:31:05 MST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:ParallelTesting.ParamTest@70cf32e3]" started-at="2024-08-03T13:31:05 MST" name="testURL" finished-at="2024-08-03T13:31:05 MST" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelTesting.ParamTest@70cf32e3]" started-at="2024-08-03T13:31:05 MST" name="tearDown" finished-at="2024-08-03T13:31:05 MST" duration-ms="192" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- ParallelTesting.ParamTest -->
-    </test> <!-- edgetest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- opeapp -->
+      </class> <!-- day42.FirstTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

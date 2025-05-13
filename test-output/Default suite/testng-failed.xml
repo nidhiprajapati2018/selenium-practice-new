@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ParallelTesting.ParamTest">
+      <class name="ImplicitlyAndExplicitwaits.ExplicitlWaitDemo">
         <methods>
-          <include name="testLogo"/>
           <include name="setup"/>
-          <include name="testTitle"/>
-          <include name="testURL"/>
+          <include name="teardown"/>
+          <include name="verifyAlert"/>
         </methods>
-      </class> <!-- ParallelTesting.ParamTest -->
+      </class> <!-- ImplicitlyAndExplicitwaits.ExplicitlWaitDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
