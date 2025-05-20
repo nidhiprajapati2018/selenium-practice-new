@@ -1,7 +1,9 @@
-package day37;
+package JavaScriptExecutorDemo;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ScrollingPage {
@@ -18,23 +20,24 @@ public class ScrollingPage {
 
 		//scroll down page by pixel number
 
-		//js.executeScript("window.scrollBy(0,1500)", "" );
-		//System.out.println(js.executeScript("return window.pageYOffset;"));
+	    js.executeScript("window.scrollBy(0,3000)", "" );
+		System.out.println(js.executeScript("return window.pageYOffset;"));
 
 		//scroll the page till element is visible
 
-		/*WebElement ele = driver.findElement(By.xpath("//strong[normalize-space()='Community poll']"));
-		js.executeScript("arguments[0].scrollIntoView();", ele );
-		System.out.println(js.executeScript("return window.pageYOffset;"));*/
+		WebElement ele = driver.findElement(By.xpath("//strong[normalize-space()='Community poll']"));
+//		js.executeScript("arguments[0].scrollIntoView();", ele );
+//		System.out.println(js.executeScript("return window.pageYOffset;"));
+		
 
 		//scroll page till end of the page
-		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-	    System.out.println(js.executeScript("return window.pageYOffset;"));
+		//js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+	    //System.out.println(js.executeScript("return window.pageYOffset;"));
 
 
-	     Thread.sleep(5000);
+	     //Thread.sleep(5000);
 	    //scrolling up to intial position
-	    js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+	    //js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
 
 
 

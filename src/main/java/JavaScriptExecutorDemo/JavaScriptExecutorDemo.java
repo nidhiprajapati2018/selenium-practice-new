@@ -1,4 +1,4 @@
-package day37;
+package JavaScriptExecutorDemo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,10 +25,6 @@ public class JavaScriptExecutorDemo {
 		//clicking on element - alternate of click()
 		WebElement radiobtn =  driver.findElement(By.xpath("//input[@id='male']"));
 		js.executeScript("arguments[0].click()", radiobtn);
-
-
-
-
 
 	}
 
